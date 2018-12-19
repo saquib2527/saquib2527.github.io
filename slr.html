@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">	
+		<title>Sign Language Recognition using Data Gloves</title>
+		<link href="https://fonts.googleapis.com/css?family=IM+Fell+Double+Pica:400,400i" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+		<link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+		<link rel="stylesheet" href="stylesheets/custom.css">
+		<link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+	</head>
+	<body>
+
+	<!--
+	<nav class="navbar navbar-custom navbar-expand-lg navbar-light">
+		<a class="navbar-brand" href="/">saquib2527</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto">
+				<li id="homeListItem" class="nav-item">
+					<a class="nav-link" href="/">Home</a>
+				</li>
+				<li id="aboutListItem" class="nav-item">
+					<a class="nav-link" href="/about">About Me</a>
+				</li>
+				<li id="resumeListItem" class="nav-item">
+					<a class="nav-link" href="/resume">Resume</a>
+				</li>
+				<li id="teachingListItem" class="nav-item">
+					<a class="nav-link" href="/teaching">Teaching</a>
+				</li>
+				<li id="researchListItem" class="nav-item">
+					<a class="nav-link" href="/research">Research</a>
+				</li>
+				<li id="tutorialListItem" class="nav-item">
+					<a class="nav-link" href="/tutorials">Tutorials</a>
+				</li>
+				<li id="perceptionListItem" class="nav-item">
+					<a class="nav-link" href="/perceptions">Perception</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	-->
+<div class="container">
+<h1 class="post-title mb-40 text-center">Sign Language Recognition using Data Gloves</h1>
+
+<!--<div class="alert alert-primary text-center"><strong>Topic of MSc thesis</strong><br>(yet to be published)</div>-->
+
+<div id="carouselExampleIndicators" class="carousel slide" style="width:70%; margin:0 auto;" data-ride="carousel">
+	<ol class="carousel-indicators">
+		<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+		<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+		<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+	</ol>
+	<div class="carousel-inner">
+		<div class="carousel-item carousel-item-research active">
+		  <img class="d-block w-100" src="uploads/research/images/slr-gui-dc.png" alt="First slide">
+		  <div class="carousel-caption d-none d-md-block">
+			Data collection window of the developed system.
+		  </div>
+		</div>
+		<div class="carousel-item carousel-item-research">
+		  <img class="d-block w-100" src="uploads/research/images/slr-gui-rta.png" alt="Second slide">
+		  <div class="carousel-caption d-none d-md-block">
+			Real-time assessment window of the developed system.
+		  </div>
+		</div>
+		<div class="carousel-item carousel-item-research">
+		  <img class="d-block w-100" src="uploads/research/images/slr-setup.jpg" alt="Third slide">
+		  <div class="carousel-caption d-none d-md-block">
+			Full setup of the developed system.
+		  </div>
+		</div>
+	</div>
+	<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		<span class="sr-only">Previous</span>
+	</a>
+	<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+		<span class="sr-only">Next</span>
+	</a>
+</div>
+
+<h3 class="research-title">Summary</h3>
+<p>
+Sign language is a method of communication primarily used by the hearing impaired and mute community. 
+In this method, a letter is expressed by hand gestures. 
+Meaningful words can be constructed by signaling multiple letters in a sequence. 
+This is known as fingerspelling.
+For a non-sign-language speaker, it is difficult to communicate with someone well-versed in sign language 
+without assistance from professional interpreters. 
+Therefore, it is worthwhile to develop a system which allows a 
+non-sign-language speaker to understand the fingerspelling of a sign language.
+</p>
+
+<p>
+In this work a system has been developed to detect fingerspelling in American Sign Language
+(ASL) and Bengali Sign Language (BdSL) using data gloves. A data glove is just a glove which
+has a number of sensors attached to it. This study identifies a way to construct a suitable
+glove for both the languages. The methodologies employed can be used in resource-constrained
+environments. The system is capable of detecting both static and dynamic symbols in the
+alphabets. Furthermore this work presents a novel approach to perform continuous assessment
+of symbols from a stream of run-time data.
+</p>
+
+<h3 class="research-title">Brief Methodology</h3>
+<p>
+The whole process of sign language recognition using data gloves was divided into a series
+of discrete steps. However, it was an iterative process, meaning it was required to perform the steps
+multiple times. The first step was to create the glove. To achieve this the preliminary
+requirement was to identify the necessary sensors. Once the sensors were identified, their placement
+came into consideration. After successful creation of the glove, data collection was
+started. Once a significant amount of data was collected, a Machine Learning (ML) model
+was trained to classify the data. Details study of the dataset and input from multiple users revealed whether a further
+modification was necessary. When modification was required, all or a few of the previous steps were
+performed again, depending on the modification. Once a suitable model was trained, sign language modeling, that is,
+determining intelligible messages from a stream of sensor data, was started. After successful
+construction of a sign language model, it was deployed in production environment. Further
+experiments were conducted to find out the accuracy of the model and to gain insight on
+comparative studies with other such models. The model was found to give an accuracy of more than 96%.
+The following figure shows a flowchart of the methodology.
+</p>
+
+<figure class="text-center">
+<img class="img-fluid" style="max-height:900px;margin:10px" src="uploads/research/images/slr-flow.png" alt="slr-flow">
+</figure>
+
+<h3 class="research-title">Dataset</h3><a href="#dataset" style="color:black"></a>
+<p id="dataset">
+The full dataset can be downloaded from <a href="uploads/research/sign-language-dataset.zip">this link</a>.
+</p>
+
+<h3 class="research-title">Demo</h3>
+<div class="embed-responsive embed-responsive-4by3"><iframe allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/gBiNijI7WGU" width="560"></iframe></div>
+
+</div>
+
+<footer class="text-center">2018</footer>
+
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<script src="/javascripts/custom.js"></script>
+</body>
+</html>
